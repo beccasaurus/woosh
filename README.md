@@ -1,2 +1,5 @@
-# csharp-refresher-projects
-Scrapin' the dust off those old C# skillz 🚀
+# `C#` Refresher Projects
+
+> Scrapin' the dust off those old `C#` skillz 🚀
+
+---

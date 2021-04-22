@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+if (( $# == 0 ))
+then
+  command=test
+else
+  command="$1"
+  shift
+fi
+
+if [ -x "scripts/dev/$command.sh" ]
+then
+  "./scripts/dev/$command.sh" "$@"
+else
+  echo "Unknown woosh development command: $command" >&2
+  exit 1
+fi

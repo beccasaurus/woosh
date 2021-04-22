@@ -1,6 +1,10 @@
-# `#! /usr/bin/env woosh`
+# Woosh
 
-> My Bash-inspired command language
+```sh
+#! /usr/bin/env woosh
+
+echo "My Bash-inspired command language!"
+```
 
 ---
 

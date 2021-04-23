@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
-rm bin/woosh
+rm -rf bin/
+mkdir bin
 ./dev clean
 dotnet build "$@"
 cd woosh

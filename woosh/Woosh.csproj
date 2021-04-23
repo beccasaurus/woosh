@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <StartupObject>Woosh.Program</StartupObject>
+    <AssemblyName>Woosh</AssemblyName>
+    <Authors>Rebecca Taylor</Authors>
+    <Company>Rebecca Taylor</Company>
+    <Product>Woosh Command Language</Product>
+    <Description>C# Command Language Shell</Description>
+    <Copyright>2021 Rebecca Taylor</Copyright>
+    <PackageIcon>shellscript.png</PackageIcon>
+    <ApplicationIcon>shellscript.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\shellscript.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="images\shellscript.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env woosh
 
 # onTrap() {
 #   echo "Hello, you provided an INT signal"

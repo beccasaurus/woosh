@@ -1,6 +1,7 @@
 
-<img src="woosh.png" alt="Woosh Logo" height="150" style="float: left;">
+<img src="woosh.png" alt="Woosh Logo" height="150" align="left">
 
+# `#! /usr/bin/env woosh`
 
 ```sh
 #! /usr/bin/env woosh
@@ -9,9 +10,5 @@ echo "My Bash-inspired command language!"
 ```
 
 <br style="clear: both;">
-
----
-
-# `#! /usr/bin/env woosh`
 
 ---

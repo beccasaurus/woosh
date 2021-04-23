@@ -8,7 +8,3 @@
 
 echo "My Bash-inspired command language!"
 ```
-
-<br style="clear: both;">
-
----

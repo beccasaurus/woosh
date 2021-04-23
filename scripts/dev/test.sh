@@ -1,6 +1,5 @@
 #! /usr/bin/env bash
 
-./dev.sh build
 if (( $# > 0 ))
 then
   filter=

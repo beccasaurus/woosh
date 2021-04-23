@@ -1,0 +1,3 @@
+#! /usr/bin/env woosh
+
+echo "Hello, woosh!"

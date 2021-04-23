@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 rm bin/woosh
-./dev.sh clean
+./dev clean
 dotnet build "$@"
 cd woosh
 dotnet publish -c Release -r linux-x64 /p:PublishSingleFile=true

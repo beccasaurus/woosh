@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
 
-./dev.sh build && ./dev.sh clean
+./dev build && ./dev clean

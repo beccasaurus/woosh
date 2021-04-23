@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Woosh.Playground", "play\Woosh.Playground.csproj", "{D05E5AC3-09B2-4512-9003-539B880403E5}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1AD58778-BD4F-45AB-A97A-175E0C3653FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Woosh", "src\Woosh\Woosh.csproj", "{3FFC9DA2-9503-4FEC-A810-C5EAEBEB7BAC}"
@@ -60,6 +62,18 @@ Global
 		{9841ED04-81A2-4A69-9C83-3DC404BC22EB}.Release|x64.Build.0 = Release|Any CPU
 		{9841ED04-81A2-4A69-9C83-3DC404BC22EB}.Release|x86.ActiveCfg = Release|Any CPU
 		{9841ED04-81A2-4A69-9C83-3DC404BC22EB}.Release|x86.Build.0 = Release|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Release|x64.Build.0 = Release|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{D05E5AC3-09B2-4512-9003-539B880403E5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3FFC9DA2-9503-4FEC-A810-C5EAEBEB7BAC} = {1AD58778-BD4F-45AB-A97A-175E0C3653FD}

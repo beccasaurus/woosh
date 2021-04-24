@@ -3,3 +3,5 @@ obj/
 .vs/
 *.suo
 *.pdb
+*.csproj.user
+Properties/

@@ -6,5 +6,5 @@
 ```sh
 #! /usr/bin/env woosh
 
-writeln "My Bash-inspired command language!"
+println "My Bash-inspired command language!"
 ```

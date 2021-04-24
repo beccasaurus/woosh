@@ -14,13 +14,13 @@ public class HelloWooshLibrary : WooshSpec {
         Assert.Equal("Hello, woosh!", statements.First().Command.Arguments.First());
     }
 
-    // [Fact]
-    // public void CanRunSimpleWooshCommands() {
-    //     var session = new Woosh.Session();
-    //     var result = session.Evaluate(@"echo ""Hello, woosh!""");
-    //     Log(result.stdout);
-    //     Assert.Equal("Hello, woosh!", result.stdout);
-    //     Assert.Empty(result.stderr);
-    //     Assert.Equal(0, result.exitCode);
-    // }
+    [Fact]
+    public void CanRunSimpleWooshCommands() {
+        var session = new Woosh.Session();
+        var result = session.Evaluate(@"println ""Hello, woosh!""");
+        Log(result.stdout);
+        Assert.Equal(0, result.exitCode);
+        Assert.Empty(result.stderr);
+        Assert.Equal("Hello, woosh!\n", result.stdout);
+    }
 }

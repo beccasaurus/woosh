@@ -9,8 +9,8 @@ public class HelloWooshLibrary : WooshSpec {
     public void CanRunSimpleWooshCommands() {
         var session = new Woosh.Session();
         var result = session.Evaluate(@"echo ""Hello, woosh!""");
-        Assert.Contains("Hello, woosh!", result.stdout);
+        Assert.Equal("Hello, woosh!", result.stdout);
         Assert.Empty(result.stderr);
-        Assert.Equal(0, result.code)
+        Assert.Equal(0, result.exitCode);
     }
 }

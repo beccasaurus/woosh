@@ -13,49 +13,14 @@
 
 using System;
 using System.Text;
-using System.Linq;
 using System.Collections.Generic;
 
 namespace Woosh {
-
-    public class Statement {
-        public Command Command { get; set; }
-        public RightHandSide? RightHandSide { get; set; }
-    }
-
-    public struct Command {
-        public string Name { get; set; }
-        public List<string> Arguments { get; set; }
-    }
-
-    public struct RightHandSide {
-        public AndOr Operator { get; set; }
-        public Statement Statement { get; set; }
-    }
-
-    public enum AndOr { AND, OR }
-    
-    public class ParseException : Exception {
-        public ParseException(string message, string file, string line, int lineNumber, int exitCode) : base(message) {
-            this.File = file;
-            this.Line = line;
-            this.LineNumber = lineNumber;
-            this.ExitCode = exitCode;
-        }
-        public string File { get; init; }
-        public string Line { get; init; }
-        public int LineNumber { get; init; }
-        public int ExitCode { get; init; }
-        public string StandardError { get { return $"ParseError: {Message}\n{File}:{LineNumber} {Line}\n"; }}
-    }
 
     public static class Parser {
 
         public static List<Statement> GetStatements(string code) {
             var statements = new List<Statement>();
-
-            // To start with, assume a single command....
-
             string command = null;
             List<string> commandArguments = new();
             
@@ -121,11 +86,13 @@ namespace Woosh {
                     if (command == null) {
                         command = currentlyParsingText.ToString();
                         currentlyParsingText.Clear();
+                    } else {
+                        commandArguments.Add(currentlyParsingText.ToString());
                     }
                 }
             }
 
-            Console.WriteLine($"ADDING COMMAND {command} with arguments [{string.Join(",", commandArguments)}]");
+            Console.WriteLine($"PARSED COMMAND {command} with arguments [{string.Join(",", commandArguments)}]");
             statements.Add(new() { Command = new() { Name = command, Arguments = commandArguments }});
 
             return statements;

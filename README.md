@@ -8,3 +8,9 @@
 
 println "My Bash-inspired command language!"
 ```
+
+---
+
+> _Just a small project for me to scrape the rust off them ol' `C#` skillz..._
+
+---
